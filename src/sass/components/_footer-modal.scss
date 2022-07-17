@@ -1,0 +1,196 @@
+body.show-modal .backdrop {
+   opacity: 1;
+   visibility: visible;
+   pointer-events: initial;
+}
+
+body.show-modal .modal {
+   transform: scale(1);
+}
+
+// .is-hidden {
+//    opacity: 0;
+//    pointer-events: none;  
+// }
+
+.backdrop {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.3);
+   z-index: 999;
+
+   overflow: auto;
+   pointer-events: none;
+   opacity: 0;
+   visibility: hidden;
+   transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
+}
+
+.modal {
+   padding: 30px;
+   border-radius: 10px;
+   width: 90%;
+   height: 90%;
+   background-color: #fff;
+   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 
+   0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+   0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+
+  
+   overflow: auto;
+   transform: scale(1.1);
+   transition: transform 250ms ease-in-out;
+   scroll-behavior: smooth;
+}
+
+// .is-hidden {
+//    opacity: 0;
+//    display: none;
+//    pointer-events: none;  
+// }
+
+
+.close-modal {
+   position: absolute;
+   top: 10px;
+   right: 8px;
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+   font-family: 'Roboto';
+   font-weight: 200;
+   text-align: center;
+   font-size: 30px;
+   color: rgba(84, 84, 84, 1);
+   background-color: #fff;
+   border: 0;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover, &:focus {
+      color: #fff;
+      background-color: #FF6B08;
+      cursor: pointer; 
+   }
+}
+
+// Налаштування карток команди
+
+.card-conteiner {
+   
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-left: -20px;
+   margin-bottom: -40px;
+   margin-top: 20px;   
+   }
+   
+   .card {
+      display: block;
+      position: relative;
+      
+      margin-left: 40px;
+      margin-bottom: 20px;
+      padding-bottom: 30px;
+      background-color: #F7F7F7;
+      width: 200px;
+      border-radius: 27% 5% 5% 5%;
+      box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+      0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      
+      @media screen and (max-width: 478px) { 
+         justify-content: center;
+         margin-left: 10px;
+         }
+         @media screen and (min-width: 755px) { 
+            max-width: 200px;
+            }
+            @media screen and (min-width: 800px) and (max-width: 1023px) {
+               max-width: 200px;  
+               }  
+            @media screen and (max-width: 1023px) { 
+               justify-content: center;
+               width: 300px;
+               }
+
+            
+            &:focus, &:hover {
+               background-color: #dbd9d9;
+               // cursor: pointer;
+            }
+            
+               
+   }
+   .card-icon {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      fill: #545454;
+      top: 240px;
+      right: 10px;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:focus, &:hover {
+         fill: #FF6B08;
+         cursor: pointer; 
+      }
+      @media screen and (max-width: 478px) { 
+      top: 310px;
+      width: 50px;
+      height: 50px;
+         }
+      @media screen and (min-width: 478px) and (max-width: 755px) { 
+      top: 350px;
+      right: 10px;
+      width: 50px;
+      height: 50px;
+         
+            }
+   }
+   
+   .card-name {
+   font-family: 'Roboto';
+   color: #545454;
+   font-weight: 600;
+   text-align: center;
+   font-size: 15px;
+   margin-bottom: 10px;
+   @media screen and (max-width: 755px) { 
+      font-weight: 700;
+      font-size: 20px;
+      margin-bottom: 15px;
+      }
+   }
+   .card-position {
+   font-family: 'Roboto';
+   color: #FF6B08;
+   font-weight: 400;
+   font-size: 14px;
+   text-align: center;
+  
+
+   @media screen and (max-width: 755px) { 
+      font-weight: 700;
+      font-size: 18px;
+      padding-bottom: 15px;
+      }
+   }
+   .modal-img {
+      width: 100%;
+      height: 200px;
+      border-radius: 30% 5%;
+      margin-bottom: 15px;
+      @media screen and (max-width: 478px) { 
+         max-height: 250px;
+         }
+      @media screen and (max-width: 755px) { 
+      height: 300px;
+      
+         }
+   }

@@ -1,0 +1,117 @@
+.gallery {
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 768px){
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.cards {
+  @media screen and (max-width: 767px) {
+      .movie_card:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+  @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: calc(-1 * 32px);
+      margin-bottom: calc(-1 * 32px);
+  }
+
+  @media screen and(min-width: 1024px)  {
+    margin-left: calc(-1 * 16px);
+  }
+
+}
+
+.movie_card {
+  cursor: pointer;
+  
+  @media screen and (min-width: 768px) {
+    margin-left: 32px;
+    margin-bottom: 32px;
+    
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-left: 16px;
+  }
+}
+.movie_card {
+  transition: all .2s ease-in-out;
+}
+
+.movie_card:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 4px;
+}
+
+.list__img {
+  width: 280px;
+  height: 398px;
+  border-radius: 5px;
+
+  @media screen and (min-width: 768px) {
+    width: 336px;
+    height: 455px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 309px;
+    height: 449px;
+  }
+   
+  }
+
+  .info_title {
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    color: #000000;
+    max-width: 280px;
+
+    @media screen and (min-width:768px){
+      margin-top: 8px;
+      line-height: 1.2;  
+    }
+  }
+
+ 
+  .info_genre {
+    text-transform: none;
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #ff6b01;
+  }
+
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.noFilmsNotify {    
+      @media screen and (min-width: 768px) {
+        margin-left: calc(1 * 32px);
+      }
+    
+      @media screen and(min-width: 1024px) {
+        margin-left: calc(1 * 16px);
+      }
+}

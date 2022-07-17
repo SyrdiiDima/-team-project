@@ -1,0 +1,73 @@
+html, body {
+   height: 100%;
+ }
+ body {
+    display: flex;
+    flex-direction: column;
+   // min-height: 100%;
+   // min-width: 100%;
+   // display: grid;
+   // grid-template-rows: 1fr auto;
+ }
+.footer-conteiner {
+background-color: #F7F7F7;
+padding-top: 30px;
+padding-bottom: 30px;
+@media screen and (min-width: 768px) {
+display: flex;
+justify-content: center;
+
+   }
+}
+.team {
+   display: flex;
+   @media screen and (max-width: 767px) { 
+      justify-content: center;
+      }
+}
+.rights {
+   @media screen and (max-width: 767px) { 
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+      }  
+}
+.footer-text {
+font-family: 'Roboto';
+color: rgba(84, 84, 84, 1);
+font-weight: 400;
+line-height: 1.2;
+
+@media screen and (min-width: 768px) { 
+font-size: 16px;
+}
+
+@media screen and (max-width: 767px) { 
+   font-size: 14px;
+   }
+}
+.footer-icon {
+   display: flex;
+   // align-items: baseline;
+   margin-top: 3px;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+.footer-modal {
+   text-decoration: underline;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   &:focus, &:hover {
+   color: #FF6B08;
+   font-size: 17px;
+   cursor: pointer;
+   
+}}
+
+.footer-wrap{
+   flex-shrink: 0;
+}
+.content {
+   flex: 1 0 auto;
+}
