@@ -1,8 +1,8 @@
 {
-  "name": "",
+  "name": "SyrdiiDima",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://SyrdiiDima.github.io/-team-project",
+  "homepage": "https://github.com/SyrdiiDima/-team-project",
   "scripts": {
     "start": "parcel src/*.html --open",
     "build": "parcel build src/*.html --public-url /-team-project/"

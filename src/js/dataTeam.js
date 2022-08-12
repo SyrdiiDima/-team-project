@@ -31,8 +31,8 @@ import maksymAfanasievDtUrl from '/src/images/maksim-afanasiev.jpg';
 import maksymAfanasievPhUrl from '/src/images/maksim-afanasiev-2.jpg';
 
 import dimaSyrdiiUrl from '/src/images/syrdii.jpg';
-import dimaSyrdiiDtUrl from '/src/images/syrdii-1.jpg';
-import dimaSyrdiiPhUrl from '/src/images/syrdii-1.jpg';
+import dimaSyrdiiDtUrl from '/src/images/syrdii.jpg';
+import dimaSyrdiiPhUrl from '/src/images/syrdii.jpg';
 
 export const modalDataTeam = [
   {
@@ -104,7 +104,7 @@ export const modalDataTeam = [
     laptop: dimaSyrdiiDtUrl,
     Phone: dimaSyrdiiPhUrl,
     href: 'https://github.com/SyrdiiDima',
-    nameEmp: 'Dmitrii Syrdii',
+    nameEmp: 'Dmytro Syrdii',
     position: 'Developer',
   },
 ];
